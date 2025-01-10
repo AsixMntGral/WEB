@@ -1,13 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot de Discord</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        h1 { color: #4CAF50; }
+        p { font-size: 18px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
     <meta name="description" content="Página oficial del bot de Discord.">
     <title>Página del Bot de Discord</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Bienvenido al Bot de Discord</h1>
+    <p>Para añadir el bot a tu servidor de Discord, haz clic en el siguiente enlace:</p>
+    <p><a href="https://discord.com/oauth2/authorize?client_id=1296898242394456135">Añadir Bot</a></p>
+    <h2>Instrucciones para hacer funcionar el bot:</h2>
+    <ul>
+        <li>
+            <strong>1. Pre-requisitos:</strong>
+            <p>Instala <a href="https://nodejs.org/">Node.js</a> en tu computadora. Asegúrate de que npm esté disponible.</p>
+        </li>
+        <li>
+            <strong>2. Descarga el Bot:</strong>
+            <p>Clona el repositorio o descarga los archivos:</p>
+            <code>git clone &lt;URL_DEL_REPOSITORIO&gt;</code>
+        </li>
+        <li>
+            <strong>3. Configura el Bot:</strong>
+            <p>Abre la carpeta del bot y ejecuta:</p>
+            <code>npm install</code>
+            <p>Coloca tu token en el archivo <code>.env</code>:</p>
+            <code>TOKEN=TU_TOKEN_DE_DISCORD</code>
+            <code>PREFIX=!</code>
+        </li>
+        <li>
+            <strong>4. Ejecuta el Bot:</strong>
+            <p>Inicia el bot con el siguiente comando:</p>
+            <code>node bot.js</code>
+        </li>
+        <li>
+            <strong>5. Usa los Comandos:</strong>
+            <p>En tu servidor de Discord, escribe:</p>
+            <code>!amor</code> - Frases románticas.<br>
+            <code>!sexo</code> - Consejos o mensajes educativos.<br>
+            <code>!help</code> - Lista de comandos disponibles.
+        </li>
+    </ul>
     <!-- Barra de navegación -->
     <header>
         <nav>
@@ -19,31 +60,26 @@
             </ul>
         </nav>
     </header>
-
     <!-- Sección: ¿Qué hace el bot? -->
     <section id="que-hace">
         <h2>¿Qué hace el bot?</h2>
         <p>Este bot de Discord está diseñado para facilitar la gestión de servidores, automatizar tareas y proporcionar funcionalidades útiles para la comunidad, como crear tickets, gestionar roles, y mucho más.</p>
     </section>
-
     <!-- Sección: Objetivo -->
     <section id="objetivo">
         <h2>Objetivo</h2>
         <p>El objetivo principal de este bot es mejorar la experiencia de los usuarios en los servidores de Discord, brindando herramientas automáticas para facilitar la administración y aumentar la interacción de los miembros.</p>
     </section>
-
     <!-- Sección: ¿Quiénes somos? -->
     <section id="quienes-somos">
         <h2>¿Quiénes somos?</h2>
         <p>Somos un equipo de entusiastas de Discord y la programación, dedicados a crear soluciones útiles para comunidades online. Nuestro objetivo es crear bots que hagan la administración de servidores más fácil y divertida.</p>
     </section>
-
     <!-- Sección: Contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Puedes contactarnos a través de <a href="mailto:contacto@tuempresa.com">contacto@tuempresa.com</a> para más información o soporte.</p>
     </section>
-
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Bot de Discord - Todos los derechos reservados.</p>

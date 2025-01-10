@@ -1,130 +1,104 @@
-/* Resetear estilos por defecto */
-* {
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(135deg, #6b7b8c, #a1c4d7); /* Fondo degradado */
+    background: linear-gradient(135deg, #ff6f61, #c2185b);
     color: #fff;
-    padding: 20px;
-}
-
-header {
-    background-color: #1d3557; /* Color oscuro para el header */
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 10px;
+/* Encabezado principal */
+h1 {
+    color: #ffc107;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-nav ul li {
-    font-size: 18px;
+/* Encabezados secundarios */
+h2 {
+    color: #f48fb1;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-nav ul li a {
-    color: #fff;
+/* Texto */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 15px 20px;
+    color: #ffe0b2;
+}
+
+/* Enlaces */
+a {
+    color: #f06292;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
     transition: color 0.3s ease;
 }
+a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
 
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #ffe0b2;
+    text-align: left;
+    max-width: 600px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffe0b2;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: color 0.3s;
+}
 nav ul li a:hover {
-    color: #ff6347; /* Color al pasar el ratón */
+    color: #ffc107;
 }
 
 /* Secciones */
 section {
-    margin: 30px auto;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
-    backdrop-filter: blur(10px); /* Efecto de difuminado en el fondo */
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    padding: 20px;
     max-width: 800px;
-    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #ff6347; /* Color llamativo para los títulos */
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #e0e0e0;
-}
-
-a {
-    color: #ff6347;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Pie de página */
+/* Footer */
 footer {
-    background-color: #1d3557;
+    margin-top: 40px;
+    padding: 10px;
+    background: #b71c1c;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 8px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Animación de desvanecimiento para los apartados */
-section {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 16px;
-    }
+    font-size: 0.9em;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.5);
 }
