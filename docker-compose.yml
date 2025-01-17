@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: discord_app
+    ports:
+      - "33006:3036" # Mapea el puerto físico 33006 al 3036 del contenedor
+    volumes:
+      - ../BBDD:/home/vagrant/aplicacions/BBDD # Volumen físico
+      - ../codi:/home/vagrant/aplicacions/BOT  # Volumen físico
+    environment:
+      - NODE_ENV=production
+    command: ["node", "index.js"] # Reemplaza "index.js" con el archivo principal de tu aplicación
+    restart: unless-stopped
