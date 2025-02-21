@@ -1,0 +1,28 @@
+
+html body {
+  background: linear-gradient(to bottom, #000428, #033a6a) !important;
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+  text-decoration: none;
+  color: white;
+}
+
+
+.navbar navbar-expand-lg navbar {
+  
+  font-size: 1.5rem;
+}
+
+  
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+      flex-direction: row-reverse;
+  }
+}
